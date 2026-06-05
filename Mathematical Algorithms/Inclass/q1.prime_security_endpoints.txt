@@ -1,0 +1,57 @@
+Prime Security Checkpoints
+
+In a security system design, a tech firm wants to install security checkpoints only at prime-numbered locations within a range of ID numbers. You are tasked with building a module that prints all prime numbers within a given range [start, end], inclusive.
+
+This will help the company place security checkpoints only at the right locations based on prime positions.
+
+
+
+Input Format
+
+Two integers start and end separated by a space, denoting the range.
+
+
+
+Output Format
+
+Print all prime numbers in the given range, separated by spaces.
+If there are no prime numbers in the range, print nothing.
+
+
+Example 1
+
+Sample Input 1
+
+10 20
+
+
+
+Sample Output 1
+
+11 13 17 19
+
+
+
+Explanation
+
+In the first input, the prime numbers between 10 and 20 are: 11, 13, 17, 19.
+
+
+
+Example 2
+
+Sample Input 2
+
+22 29
+
+
+
+Sample Output 2
+
+23 29
+
+
+
+Explanation
+
+In the second input, 23 and 29 are prime.

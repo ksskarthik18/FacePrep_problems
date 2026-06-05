@@ -1,0 +1,64 @@
+Minimum Deletions for Common Divisor Alignment
+You are helping a manufacturing unit streamline their machine parts inventory. Each part in the inventory is represented by an integer in the array nums. You also have a list numsDivide, representing the specifications of machines in use. To make the system efficient, you want the smallest part value in your nums list to be a perfect fit (i.e., a divisor) for all the machine specs in numsDivide.
+
+To achieve this, you can remove any number of elements from nums. Your goal is to find the minimum number of deletions needed to make the smallest value in nums a divisor of every value in numsDivide. If no such configuration is possible, return -1.
+
+
+
+Input Format
+
+The first line contains two space-separated integers n and m — the size of nums and numsDivide.
+The second line contains n space-separated integers representing the nums array.
+The third line contains m space-separated integers representing the numsDivide array.
+
+
+Output Format
+
+A single integer — the minimum number of deletions required, or -1 if it is not possible.
+
+
+Example 1
+
+Sample Input 1
+
+5 5 
+
+2 3 2 4 3 
+
+9 6 9 3 15
+
+
+
+Sample Output 1
+
+2
+
+
+
+Explanation
+
+We remove both 2s from nums to get [3, 4, 3]. The smallest element now is 3, which divides all elements in numsDivide. So, the minimum number of deletions is 2.
+
+
+
+Example 2
+
+Sample Input 2
+
+3 4 
+
+4 3 6 
+
+8 2 6 10
+
+
+
+Sample Output 2
+
+-1
+
+
+
+Explanation
+
+There is no subset of nums whose smallest element divides all elements in numsDivide

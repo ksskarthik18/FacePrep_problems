@@ -1,0 +1,59 @@
+Smart Grid Configuration: Identifying Valid Time Intervals
+In a smart energy grid system, several monitoring devices are deployed across different locations to collect data such as voltage, current, temperature, and load status. These devices must transmit their data back to the central controller at fixed, synchronized time intervals to avoid network congestion and ensure energy efficiency.
+
+The central controller operates on a base cycle time of n seconds. To ensure compatibility, all device transmission intervals must be factors of this base cycle time so that their transmissions align without overlap or delay.
+
+Before deployment, an engineer needs to identify all valid time intervals that evenly divide this base time. This helps in assigning each device a unique and efficient schedule for data transfer. Since the base time can be a large number (due to high-frequency data cycles), the solution must be optimized to run efficiently even for large values of n.
+
+You are required to write a program that takes the base time n as input and outputs all the possible factors in ascending order. This will help the configuration system automatically pick suitable intervals for sensor data transfer.
+
+
+
+Input Format
+
+A single integer n (1 ≤ n ≤ 10⁹) — the base time interval for the sensor.
+
+
+
+Output Format
+
+Space-separated list of integers representing all the distinct factors of n, sorted in ascending order.
+
+
+Example 1
+
+Sample Input 1
+
+36
+
+
+
+Sample Output 1
+
+1 2 3 4 6 9 12 18 36
+
+
+
+Explanation
+
+For n = 36, the possible intervals at which the sensor can send data are all the factors of 36. These are the timings that evenly divide 36, ensuring that each interval results in perfect synchronization with the base time.
+
+
+
+Example 2
+
+Sample Input 2
+
+49
+
+
+
+Sample Output 2
+
+1 7 49
+
+
+
+Explanation
+
+For n = 49, only the intervals that evenly divide 49 are considered valid. Since 49 is a perfect square, one of the factors (7) will be repeated during the process but should be counted only once.

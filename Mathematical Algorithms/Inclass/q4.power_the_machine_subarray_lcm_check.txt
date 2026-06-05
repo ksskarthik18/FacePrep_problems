@@ -1,0 +1,67 @@
+Powering the Machine: Subarray LCM Check
+
+You're working on a component of a smart manufacturing system that needs to process materials in batch sequences. Each machine has its own processing time, and a group of machines (subarray) can process together only if their Least Common Multiple (LCM) exactly matches the required synchronization time k.
+
+Given the processing times of machines as an array nums and a target synchronization time k, your task is to find the number of contiguous subarrays whose LCM is exactly k.
+
+This helps optimize when the assembly line can run efficiently.
+
+
+
+Input Format
+
+The first line contains two integers n and k — the number of machines and the synchronization time.
+The second line contains n space-separated integers representing the array nums.
+
+
+Output Format
+
+Print a single integer — the number of subarrays with LCM equal to k.
+
+
+Example 1
+
+Sample Input 1
+
+5 6
+
+3 6 2 7 1
+
+
+
+Sample Output 1
+
+4
+
+
+
+Explanation
+
+The subarrays where LCM is exactly 6 are:
+
+[3, 6]
+[6]
+[6, 2]
+[3, 6, 2]
+So the output is 4.
+
+
+Example 2
+
+Sample Input 2
+
+1 2
+
+3
+
+
+
+Sample Output 2
+
+0
+
+
+
+Explanation
+
+There are no subarrays whose LCM is 2.

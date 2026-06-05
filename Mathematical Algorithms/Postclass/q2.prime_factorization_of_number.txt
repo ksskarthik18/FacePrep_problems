@@ -1,0 +1,55 @@
+Prime Factorization of a Number
+In a cryptographic data integrity challenge, you are given access to a number encryption module that uses prime factorization as a core step for generating keys. To simulate this, your task is to find the prime factors of a given number. Prime factorization refers to expressing the number as a product of its prime numbers only.
+
+This information can be crucial for building security mechanisms and understanding number structures. Write a program that returns all the prime factors of a given number in ascending order.
+
+
+
+Input Format
+
+A single integer n (2 ≤ n ≤ 10⁶)
+
+
+
+Output Format
+
+Print the prime factors of n in ascending order separated by spaces.
+
+
+Example 1
+
+Sample Input 1
+
+12
+
+
+
+Sample Output 1
+
+2 2 3
+
+
+
+Explanation
+
+12 = 2 × 2 × 3 — All factors are prime numbers.
+
+
+
+Example 2
+
+Sample Input 2
+
+15
+
+
+
+Sample Output 2
+
+3 5
+
+
+
+Explanation
+
+15 = 3 × 5 — Both are prime factors.

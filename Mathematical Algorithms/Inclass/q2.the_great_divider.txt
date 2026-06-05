@@ -1,0 +1,74 @@
+The Great Divider
+In the kingdom of Numeria, ancient vaults contain secrets of immense value—knowledge, treasure, and power. These vaults are protected by enchanted locks, and each lock requires a special number to open. The royal scholars discovered an ancient script which revealed that the vaults can be opened only when the Greatest Common Divider (GCD) of all guardian numbers is spoken aloud.
+
+Each guardian number is inscribed on a stone plate in front of the vault. The spell to open the vault is the greatest number that divides all guardian numbers without leaving a remainder.
+
+As the newly appointed Royal Codebreaker, your task is to help the kingdom by designing an algorithm that computes this GCD for any given set of numbers.
+
+But beware! The vaults are many, and the kingdom demands an efficient solution to handle them quickly.
+
+
+
+Input Format
+
+First line: An integer n (1 ≤ n ≤ 10^5), the number of guardian stones.
+Second line: n space-separated positive integers (1 ≤ a[i] ≤ 10^9), the numbers on the stones.
+
+
+Output Format
+
+A single integer — the GCD of all the numbers.
+
+
+Example 1
+
+Sample Input 1
+
+5
+
+20 40 60 80 100
+
+
+
+Sample Output 1
+
+20
+
+
+
+Explanation
+
+We are given 5 numbers: 20, 40, 60, 80, 100.
+
+GCD(20, 40) = 20
+GCD(20, 60) = 20
+GCD(20, 80) = 20
+GCD(20, 100) = 20
+Since 20 is the largest number that divides all five numbers without a remainder, the output is 20.
+
+
+
+Example 2
+
+Sample Input 2
+
+4
+
+7 14 21 28
+
+
+
+Sample Output 2
+
+7
+
+
+
+Explanation
+
+We are given 4 numbers: 7, 14, 21, 28.
+
+GCD(7, 14) = 7
+GCD(7, 21) = 7
+GCD(7, 28) = 7
+All numbers are divisible by 7 and no larger number divides them all. Therefore, the output is 7.
