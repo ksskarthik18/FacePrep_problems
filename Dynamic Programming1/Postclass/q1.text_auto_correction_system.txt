@@ -1,0 +1,80 @@
+ext Auto-correction System
+In a smart text editor, when a user types a word incorrectly, the system suggests corrections based on the minimum number of operations needed to transform the wrong word into a correct dictionary word.
+
+You are tasked with creating a module that calculates the minimum number of operations required to convert one string into another.
+
+The permitted operations are:
+
+Insert a character
+Delete a character
+Replace a character
+Find the minimum number of operations (edit distance) required to transform one given string into another.
+
+
+
+Input Format
+
+The first line contains a string word1.
+The second line contains a string word2.
+
+
+Constraints
+
+0 <= length of word1, word2 <= 500
+word1 and word2 contain only lowercase English letters.
+
+
+Output Format
+
+Output a single integer — the minimum number of operations needed.
+
+
+Example 1
+
+Sample Input 1
+
+horse
+
+ros
+
+
+
+Sample Output 1
+
+3
+
+
+
+Explanation
+
+horse → rorse (replace 'h' with 'r')
+rorse → rose (delete 'r')
+rose → ros (delete 'e')
+Thus, minimum 3 operations are needed.
+
+
+
+Example 2
+
+Sample Input 2
+
+intention
+
+execution
+
+
+
+Sample Output 2
+
+5
+
+
+
+Explanation
+
+intention → inention (delete 't')
+inention → enention (replace 'i' with 'e')
+enention → exention (replace 'n' with 'x')
+exention → exection (replace 'n' with 'c')
+exection → execution (replace 'e' with 'u')
+Thus, minimum 5 operations are needed.

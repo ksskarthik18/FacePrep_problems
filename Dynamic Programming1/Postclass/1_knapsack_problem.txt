@@ -1,0 +1,72 @@
+Treasure Hunter's Knapsack
+
+A treasure hunter is exploring an ancient cave filled with valuable artifacts.
+
+Each artifact has a specific weight and value.
+
+The hunter has a knapsack that can carry at most a certain weight W.
+
+Your task is to find the maximum total value of artifacts the hunter can carry without exceeding the knapsack's weight capacity.
+
+Each artifact can either be picked once or not picked at all (you cannot break or partially pick an item).
+
+
+Input Format
+
+    The first line contains two integers n and W — the number of artifacts and the maximum weight the knapsack can carry.
+    The second line contains n space-separated integers representing the weights of the artifacts.
+    The third line contains n space-separated integers representing the values of the artifacts.
+
+
+Constraints
+
+    1 <= n <= 100
+    1 <= W <= 10^4
+    1 <= weight[i], value[i] <= 10^4
+
+
+Output Format
+
+    Output a single integer — the maximum total value the hunter can collect.
+
+
+Example 1
+
+Sample Input 1
+
+4 8
+
+2 3 4 5
+
+3 4 5 6
+
+
+Sample Output 1
+
+10
+
+
+Explanation
+
+The hunter can pick artifacts with weights 3 and 5 (total weight 8) and values 4 and 6, total value 10.
+
+
+Example 2
+
+Sample Input 2
+
+3 50
+
+10 20 30
+
+60 100 120
+
+
+Sample Output 2
+
+220
+
+
+Explanation
+
+The hunter picks artifacts with weights 20 and 30 (total weight 50) and values 100 and 120, total value 220.

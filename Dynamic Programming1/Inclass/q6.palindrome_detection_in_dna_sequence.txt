@@ -1,0 +1,60 @@
+Palindrome Detection in DNA Sequences
+In genetic research, scientists often look for patterns within DNA sequences. A palindromic subsequence is a sequence that reads the same forwards and backwards, much like a palindrome word. Identifying such sequences is crucial for understanding specific genetic traits and mutations.
+
+Given a DNA sequence, help the scientists find the length of the longest palindromic subsequence. A subsequence is a sequence that can be derived by deleting some or no characters without changing the order of the remaining characters.
+
+
+
+Input Format
+
+The first line contains a string dnaSequence representing the DNA sequence.
+The length of dnaSequence is between 1 and 1000.
+
+
+Constraints
+
+The dnaSequence contains only the characters 'A', 'C', 'G', and 'T'.
+
+
+Output Format
+
+Output a single integer — the length of the longest palindromic subsequence.
+
+
+Example 1
+
+Sample Input 1
+
+bbbab
+
+
+
+Sample Output 1
+
+4
+
+
+
+Explanation
+
+One possible longest palindromic subsequence is "bbbb".
+
+
+
+Example 2
+
+Sample Input 2
+
+ACGCTGA
+
+
+
+Sample Output 2
+
+5
+
+
+
+Explanation
+
+The longest palindromic subsequence is "ACGCA" with a length of 5.
