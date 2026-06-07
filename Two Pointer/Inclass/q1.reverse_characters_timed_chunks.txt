@@ -1,0 +1,83 @@
+Reverse Characters in Timed Chunks
+
+In a secure messaging app, data is encrypted in chunks for extra safety. The encryption algorithm processes messages by reversing characters in a specific pattern before applying further transformations. Specifically, for every 2k characters in a message:
+
+Reverse the first k characters.
+Leave the next k characters as they are.
+Repeat this pattern for the entire message.
+If there are fewer than k characters left, reverse all remaining characters.
+
+If there are at least k but fewer than 2k characters, reverse only the first k characters and leave the rest.
+
+Implement a function that applies this encryption pattern to a given message.
+
+
+
+Input Format
+
+A string s representing the message (only lowercase letters).
+An integer k representing the reversal chunk size.
+
+
+Output Format
+
+Print the transformed message after applying the reverse rule.
+
+
+Example 1
+
+Sample Input 1
+
+abcdefg
+
+2
+
+
+
+Sample Output 1
+
+bacdfeg
+
+
+
+Explanation
+
+The message is broken into segments of 2k = 4 characters: abcd and efg
+First segment (abcd): reverse first k = 2 → bacd
+Second segment (efg): reverse first k = 2 → fe → feg becomes feg
+Final message: bacdfeg
+
+
+Example 2
+
+Sample Input 2
+
+abcdefghijklmnopqrst
+
+6
+
+
+
+Sample Output 2
+
+Fedcbaghijklrqponmst
+
+
+
+Explanation
+
+Now, 2k = 12. Process 12 characters at a time.
+
+
+
+Step-by-step
+
+First 12 characters: "abcdefghijkl"
+Reverse first 6: "abcdef" → "fedcba"
+Keep next 6: "ghijkl"
+→ Result so far: "fedcbaghijkl"
+Remaining characters: "mnopqrst" (8 characters, between k and 2k)
+Reverse first 6: "mnopqr" → "rqponm"
+Leave the rest ("st")
+→ Result: "rqponmst"
+Final result: "fedcbaghijklrqponmst"
