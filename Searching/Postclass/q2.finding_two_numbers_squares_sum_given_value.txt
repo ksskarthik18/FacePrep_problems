@@ -1,0 +1,64 @@
+Finding Two Numbers Whose Squares Sum to a Given Value
+
+In a futuristic city, the security system of a high-tech vault is based on mathematical puzzles. To unlock the vault, a user must find two non-negative integers a and b such that their squares sum up to a given security code c. The vault's AI is designed to check for the existence of such numbers efficiently using a binary search-based approach.
+
+Your task is to develop a program that determines whether there exist two integers a and b such that:
+
+a2 + b2 = c
+
+If such numbers exist, the vault will open (true), otherwise, it remains locked (false).
+
+
+
+Input Format
+
+A single integer c (0 ≤ c ≤ 231−1)
+
+
+Constraints
+
+0 ≤ c ≤ 2^31 - 1
+
+
+Output Format
+
+Print true if there exist integers a and b such that a2 + b2 = c, otherwise print false.
+
+
+Example 1
+
+Sample Input 1
+
+5
+
+
+
+Sample Output 1
+
+true
+
+
+
+Explanation
+
+1² + 2² = 1 + 4 = 5
+
+
+
+Example 2
+
+Sample Input 2
+
+3
+
+
+
+Sample Output 2
+
+false
+
+
+
+Explanation
+
+No two integers satisfy the equation a2 + b2 = c.
